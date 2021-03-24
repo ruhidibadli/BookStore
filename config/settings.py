@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     #Local apps
     'accounts',
     'pages',
+    'books',
 ]
 
 
@@ -96,7 +97,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'api_test',
+        'NAME': 'bookstore',
         'USER': 'postgres',
         'PASSWORD': '3432646r',
         'HOST': '127.0.0.1',
