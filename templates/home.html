@@ -5,6 +5,9 @@
 
 {% block content %}
     <h1>Homepage</h1>
+    <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="GET">
+        <input class="form-control mr-sm-2" placeholder="Search" type="text" name="q" aria-label="Search">
+    </form>
     <img class="bookcover" src="{% static 'images/dfp.png' %}" alt="">
     {% if user.is_authenticated %}
         <p>Hi {{ user.email }}</p>
